@@ -1,14 +1,15 @@
 ---
 name: "Code Quality  Analysis"
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - apps/**
-      - '!apps/docs/**'
-      - libraries/**
+on: 
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - apps/**
+  #     - '!apps/docs/**'
+  #     - libraries/**
 
 jobs:
   analyze:
